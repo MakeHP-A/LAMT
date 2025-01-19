@@ -15,6 +15,28 @@ body {
   color: #007bff;
 }
 
+/* zoom機能を試す */
+.zoom-on-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.zoom-item {
+  width: 300px;
+  height: 200px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transform: scale(1); /* 初期状態はスケール1 */
+  transition: transform 0.3s ease; /* スムーズなアニメーション */
+}
+
+
+
 .scrolling-text {
   overflow: auto; /* テキストが領域からはみ出た場合にスクロールバーを表示 */
   max-height: 300px; /* スクロールするテキストの最大高さを設定 */
